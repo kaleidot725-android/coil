@@ -24,19 +24,14 @@ dependencies {
 ## raw フォルダに動画を格納する
 
 動画ファイルが必要になるので次のように raw フォルダを作成し格納しておきます。
-<<<<<<< HEAD
 (対応している動画ファイルの拡張子→[サポートされているメディア形式](https://developer.android.com/guide/topics/media/media-formats#video-formats))
-=======
-(対応している動画ファイルの拡張子→[test](https://developer.android.com/guide/topics/media/media-formats#video-formats))
->>>>>>> 80121d18c93b99fffb1ae4f49da01ccb460e27c0
 
 [![Image from Gyazo](https://i.gyazo.com/76f7e6451f96c64e42379fd0c02d90c4.png)](https://gyazo.com/76f7e6451f96c64e42379fd0c02d90c4)
 [![Image from Gyazo](https://i.gyazo.com/5f8d6a50628a5de598358fc7f5329d4a.gif)](https://gyazo.com/5f8d6a50628a5de598358fc7f5329d4a)
 
 ## raw フォルダから動画ファイルを読み込む
 
-まずは raw フォルダに格納したファイルの URL を生成し、load にてその url を読み込んでやります。
-あとは videoFrameMillis にて動画のどの秒数のフレームを表示するか指定してやれば動作します。
+まずは raw フォルダに格納したファイルの URL を生成し、load にてその url を読み込んでやります。あとは videoFrameMillis にて動画のどの秒数のフレームを表示するか指定してやれば動作します。
 
 下記のサンプルだと fetcher で VideoFrameUriFetcher を指定してやっています。
 本来であれば Coil 側で動画ファイルであるか自動的に判定してくれるので指定する必要は
@@ -83,9 +78,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
 # おわりに
 
-Coil の Video Frames では特定の動画ファイルから特定のフレームを画像として切り出すことができます。
-これを使えば動画ファイルの読み込み中に表示するサムネイルの取得などができそうです。
-使う機会が多いとは言えない機能ですが頭の片隅に覚えていれておけばどこかで使えそうだと思いました。
+Coil の Video Frames では特定の動画ファイルから特定のフレームを画像として切り出すことができます。これを使えば動画ファイルの読み込み中に表示するサムネイルの取得などができそうです。使う機会が多いとは言えない機能ですが頭の片隅に覚えていれておけばどこかで使えそうだと思いました。
 
 # 参考文献
 
