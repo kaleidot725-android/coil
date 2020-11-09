@@ -13,8 +13,8 @@ Video Frames を使う場合には Core ライブラリに加えて Video Frames
 ```groovy
 dependencies {
       ︙
-    implementation "io.coil-kt:coil:1.0.0-rc3"
-    implementation("io.coil-kt:coil-video:1.0.0-rc3")
+    implementation "io.coil-kt:coil:1.0.0"
+    implementation "io.coil-kt:coil-video:1.0.0"
       ︙
 }
 ```
